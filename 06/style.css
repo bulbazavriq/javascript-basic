@@ -1,0 +1,102 @@
+body, html {
+    margin: 0;
+}
+
+.container {
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+
+.item {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    left: 0;
+    top: 0;
+}
+
+
+
+.item-5 {
+    left: 100px;
+    top: 100px;
+    background-color: rgb(22, 196, 6);
+}
+.item-6 {
+    left: 0px;
+    top: 0px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: rgb(255, 145, 0);
+}
+.item-7 {
+    left: 50px;
+    top: -25px;
+    width: 50px;
+    height: 80px;  
+    border-radius: 50%;
+    background-color: rgb(72, 255, 0);
+    transform: rotate(-50deg);
+}
+.item-8 {
+    left: 75px;
+    top: -35px;
+    width: 50px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgb(72, 255, 0);
+}
+.item-9 {
+    left: 100px;
+    top: -25px;
+    width: 50px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgb(72, 255, 0);
+
+    transform: rotate(50deg);
+}
+
+.i {
+    width: 200px;
+    height: 200px;
+    left: 400px;
+    top: 400px;
+    position: absolute;
+
+      
+}
+
+@keyframes Y {
+    50% {
+        top: 300px;
+    }
+    0%, 100% {
+        top: 400px;
+    }
+  }
+@keyframes R {
+    0% {
+        transform:rotate(0deg);    
+    }
+ 
+    100% {
+        transform:rotate(360deg);
+    }
+  }
+@keyframes X {
+    50% {
+        left: 300px;
+    }
+    0%, 100% {
+        left: 400px;
+    }
+  }
+.i {
+  animation-name: R, Y, X;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
