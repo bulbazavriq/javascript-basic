@@ -1,6 +1,6 @@
 a = int(input())
-q = len(str(a))
-if q == 2:
+b = int(input())
+if a > 3 and b > 2:
     print('+')
 else:
     print('-')
